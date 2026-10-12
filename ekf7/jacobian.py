@@ -2,7 +2,7 @@
 from __future__ import annotations
 """EKF 的解析雅可比：状态转移 F7、过程噪声映射 Q7、磁航向观测梯度 Hdgc。
 
-全部为显式标量展开式（逐项对应参考实现），便于逐行核对。
+全部为显式标量展开式，便于逐行核对。
 """
 
 import numpy as np

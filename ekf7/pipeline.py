@@ -14,14 +14,12 @@ from .navigation_filter import NavigationFilter
 from .parameters import Parameters
 
 
-# ImuPipeline（对应参考实现的完整调用链：低通→自标定→检测→滤波）
+# 端到端管线（低通 → 自标定 → 检测 → 滤波）
 # ---------------------------------------------------------------------------
 
 
 class ImuPipeline:
-    """参考实现的完整调用链：
-    输入一阶低通 -> (前 10s) 静止自标定安装矩阵/陀螺零偏 -> 静止检测 -> EKF 步进。
-    """
+    """每拍处理流程：输入一阶低通 -> (前 10s) 静止自标定安装矩阵/陀螺零偏 -> 静止检测 -> EKF 步进。"""
 
     def __init__(self, fs: float = 200.0, work_mode: int = 1, amode: int = 9, param: Parameters | None = None):
         self.param = param or Parameters()

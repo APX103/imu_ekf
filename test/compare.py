@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""compare.py — 逐拍比对参考实现输出与本仓库 Python 移植的输出。"""
+"""compare.py — 逐拍比对两份实现的输出（CSV 格式相同）。"""
 import sys
 
 import numpy as np

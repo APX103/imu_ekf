@@ -28,4 +28,4 @@ for k in range(data.shape[0]):
 
 with open(out_path, "w") as fh:
     fh.write("\n".join(rows) + "\n")
-print(f"Python(本仓库移植): {data.shape[0]} 拍 -> {out_path} (amode={amode}, fs={fs})")
+print(f"Python(本仓库): {data.shape[0]} 拍 -> {out_path} (amode={amode}, fs={fs})")

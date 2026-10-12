@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import annotations
-"""滤波器全部可调参数（一个类），默认值即参考实现的出厂调参（200Hz 档）。
+"""滤波器全部可调参数（一个类），默认值为 200Hz 档整定。
 
 各字段含义见 README 参数表。
 """
@@ -18,7 +18,7 @@ class Parameters:
         self.acc_filt_k = 0.1      # 加速度计输入低通系数
         self.k_bias = 0.1
         self.amode = 6             # 6=六轴(无磁) 9=九轴(磁航向融合)
-        self.g0 = 9.795502520545487  # 参考实现的默认重力常量
+        self.g0 = 9.795502520545487  # 默认重力常量（按当地纬度修改）
         # AutoCalParameters
         self.auto_cal_gyro_max_min = math.pi / 900.0   # 静止判定陀螺峰峰值 0.2°/s
         self.auto_cal_acc_max_min = 0.05               # 静止判定加计峰峰值 m/s^2

@@ -3,8 +3,8 @@
 gen_data.py — 黑盒一致性测试的合成 IMU 数据生成器
 =================================================
 生成与真值姿态自洽的 acc/gyro/mag 序列（体坐标系），供
-  · 参考实现侧（需自备授权副本，见 reference_harness/）
-  · run_py.py（Python 移植版）
+  · 对端实现（搭建说明见 reference_harness/）
+  · run_py.py（本仓库 Python 实现）
 两边喂同一份数据做逐拍输出比对。
 
 场景（200 Hz）：
