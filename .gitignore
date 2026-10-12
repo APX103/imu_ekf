@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.DS_Store
+# 数据与输出均可由 gen_data.py / 两侧驱动确定性再生
+test/data_*.csv
+test/out_*.csv
+data_*.csv
+build/
+dist/
+*.egg-info/

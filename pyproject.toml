@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quat-zupt-ekf"
+version = "1.0.0"
+description = "七状态(四元数+速度)全量EKF姿态解算：ZUPT零速观测、磁航向观测、静止检测与自标定"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "APX103" }]
+dependencies = ["numpy"]
+keywords = ["imu", "attitude", "ekf", "quaternion", "zupt", "ahrs", "sensor-fusion"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools]
+packages = ["ekf7"]
